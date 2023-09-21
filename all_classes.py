@@ -7,7 +7,6 @@ import time
 import pandas as pd
 from datetime import datetime, timedelta
 
-# Initialize the web driver
 driver = webdriver.Chrome()
 
 # canvas
@@ -17,9 +16,9 @@ input("Press Enter once logged in to Canvas.")
 
 
 courses = {
-    "CS 452": "https://byu.instructure.com/courses/23216/grades",
-    "CS 474": "https://byu.instructure.com/courses/23364/grades",
-    "SFL 260": "https://byu.instructure.com/courses/23320/grades"
+    "class 1": "url1",
+    "class 2": "url2",
+    "class 3": "url3"
 }
 
 
@@ -56,7 +55,7 @@ for course_name, url in courses.items():
             all_assignments.append([course_name, name, due_date_text])
 
 # learning suite
-gradebook_url = "https://learningsuite.byu.edu/.m6Do/cid-vaPdiZLeZfew/student/gradebook"
+gradebook_url = "url4"
 driver.get(gradebook_url)
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-v--353733]")))
 
