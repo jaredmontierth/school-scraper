@@ -4,4 +4,7 @@ This is a tool I created that scrapes all of the different class websites and co
 
 Created with selenium, BeautifulSoup, and pandas.
 
-![Example Output](/images/example_output.png)
+
+Example Output:
+<img src="/images/example_output.png" width="400">
+
