@@ -6,5 +6,7 @@ Created with selenium, BeautifulSoup, and pandas.
 
 
 Example Output:
+
+
 <img src="/images/example_output.png" width="400">
 
